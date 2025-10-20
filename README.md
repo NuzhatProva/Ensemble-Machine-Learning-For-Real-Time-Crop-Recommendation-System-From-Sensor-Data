@@ -1,6 +1,5 @@
-# Rice Synthetic Classifier (Render-ready demo)
+# Ensemble-Machine-Learning-For-Real-Time-Crop-Recommendation-System-From-Sensor-Data
 
-This is a **lightweight demo** service that mimics the rice-variety project using a **tiny synthetic dataset** so it runs smoothly on Render free tier (CPU). It does **not** use TensorFlow/PyTorch.
 - Generates 20-class synthetic 28×28 RGB images with simple, class-specific patterns.
 - Trains a small `RandomForestClassifier` (scikit-learn).
 - Exposes `/train`, `/predict`, `/labels`, `/health` endpoints via FastAPI.
