@@ -1,13 +1,13 @@
 # Ensemble-Machine-Learning-For-Real-Time-Crop-Recommendation-System-From-Sensor-Data
 
-- Generates 20-class 28×28 RGB images with simple, class-specific patterns.
-- Trains a small `RandomForestClassifier` (scikit-learn).
+- Generates 20-class, 28×28 RGB images with class-specific patterns.
+- Trains `RandomForestClassifier` (scikit-learn).
 - Exposes `/train`, `/predict`, `/labels`, `/health` endpoints via FastAPI.
 
 ## Endpoints
 - `GET /health` → status
 - `GET /labels` → current (or default) class labels
-- `POST /train` → (re)generate synthetic dataset and train a fresh model
+- `POST /train` → (re)generate dataset and train model
   - Query params: `n_classes` (2–20), `samples_per_class` (5–200), `image_size` (16–64), `test_size` (0.1–0.5)
 - `POST /predict` → multipart upload of an image (`file`); returns predicted class + probabilities
 
